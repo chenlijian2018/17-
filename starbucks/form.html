@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>星巴克咖啡</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+	<header class="top-header">
+		<img class="starbucks-logo" src="images/logo.png" alt="星巴克咖啡">
+		<nav class="top-menu" >
+			<ul>
+				<li><a href="home.html" title="星巴克主页">主页</a></li>
+				<li><a href="#" title="咖啡及文化">咖啡及文化</a></li>
+				<li><a href="#" title="饮品及美食">饮品及美食</a></li>
+				<li><a href="#" title="星享俱乐部">星享俱乐部</a></li>
+				<li><a href="#" title="在线订阅">在线订阅</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="form">
+		<h3>订购星巴克咖啡</h3>
+		<form action="success.html" method="post">
+			<div class="row">
+				<div class="cell">
+					<label for="beans">你喜欢的咖啡豆品种：</label>
+				</div>
+				<div class="cell">
+					<input type="text" name="beans" list="beans_list">
+					<datalist id="beans_list">
+						<option value="House Blend(首选咖啡)">
+						<option value="Kenya(肯亚咖啡)">
+						<option value="Organic Guatemala（危地马拉有机咖啡）">
+					</datalist>
+				</div>
+			</div>
+			<div class="row">
+                <div class="cell">类型：</div>
+                <div class="cell">
+                    <input type="radio" id="type1" name="type" value="1" checked>
+                    <label for="type1">咖啡豆</label><br>
+                    <input type="radio" id="type2" name="type" value="2">
+                    <label for="type2">咖啡粉</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell"><label for="bags">数量（袋）：</label></div>
+                <div class="cell">
+                    <input type="number" id="bags" name="bags" min="1" max="10">
+                </div>
+            </div>
+
+		</form>
+	</main>	
+</div>
+
+	
+</body>
+</html>
